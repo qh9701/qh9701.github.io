@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>第一篇 | Gridea</title>
 <meta name="description" content="温故而知新" />
-<link rel="shortcut icon" href="https://qh9701.github.io/favicon.ico?v=1576634825471">
+<link rel="shortcut icon" href="https://qh9701.github.io/favicon.ico?v=1576635237372">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://qh9701.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://qh9701.github.io">
-  <img class="avatar" src="https://qh9701.github.io/images/avatar.png?v=1576634825471" alt="">
+  <img class="avatar" src="https://qh9701.github.io/images/avatar.png?v=1576635237372" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -108,6 +108,32 @@
           </div>
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '26f44124c74e93973096',
+    clientSecret: '65a5f6c8d3727a3cb19501cc4b0731b2d6a12e53',
+    repo: 'qh9701.github.io',
+    owner: 'qh9701',
+    admin: ['qh9701'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
         <div class="site-footer">
